@@ -29,7 +29,7 @@ import com.hafeez.repo.ProductRepo;
 
 @RestController
 @RequestMapping("products")
-@CrossOrigin(origins = { "http://localhost:3000", "http://localhost:3000/cart" })
+@CrossOrigin(origins = { "https://ecom-react-frontend.herokuapp.com", "https://ecom-react-frontend.herokuapp.com/cart" })
 public class ProductController {
 	@Autowired
 	private ProductRepo repo;

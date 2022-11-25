@@ -22,7 +22,7 @@ import com.hafeez.repo.CustomerRepo;
 import com.hafeez.repo.ProductRepo;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://ecom-react-frontend.herokuapp.com/")
 public class UserController {
 	@Autowired
 	private ProductRepo repo;
