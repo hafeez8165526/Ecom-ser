@@ -11,7 +11,7 @@ import com.hafeez.payload.UserCredentials;
 
 import io.swagger.v3.oas.annotations.Operation;
 
-@FeignClient(name="Heroauth-service",url = "http://localhost:8081/auth")
+@FeignClient(name="Heroauth-service",url = "https://ecom2-auth.herokuapp.com/auth")
 public interface AuthProxy {
 	
 	@GetMapping("/health-check")
