@@ -41,7 +41,12 @@ public class ProductController {
 	private CartRepo cart_repo;
 	@Autowired
 	private AuthProxy authProxy;
-
+	
+	@GetMapping("/health")
+	public String getHealth() {
+		return "working~!!!!";
+	}
+	
 	@GetMapping("/all")
 	public List<Product> getAll(@RequestHeader(name = "Authorization") String token, HttpServletRequest req,
 			HttpServletResponse res) {
